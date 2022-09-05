@@ -1,16 +1,18 @@
 const binaryItems = require('content/items');
 
-/* boilerplate
-const = extend(Wall, "", {
-});
-.requirements(Category.defense, ItemStack.with(binaryItems.zero, 5));
-exports. = ;
-*/
+const defense = [ 
+	extend(Wall, "test", {
+		health: 9999999,
+		chanceDeflect: 1,
+		requirements: ItemStack.with(binaryItems.zero, 5)),
+	})
+];
 
-const test = extend(Wall, "test", {
-	health: 9999999,
-	chanceDeflect: 1
-});
+for(let i = 0;i<defense.length;i++){
+	defense[i].buildVisibility = BuildVisibility.shown;
+	defense[i].category = Category.defense;
+}
 
-test.requirements(Category.defense, ItemStack.with(binaryItems.zero, 5));
-exports.test = test;
+module.exports = {
+	[`${defense[i].name}`]: [`${defense[i].name}`]
+};
