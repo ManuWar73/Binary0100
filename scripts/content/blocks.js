@@ -3,5 +3,5 @@ var defense = [
 ]
 
 for(let i in defense){
-	require("content/blocks/defense/"+i);
+	require("content/blocks/defense/"+defense[i]);
 }
