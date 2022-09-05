@@ -1,5 +1,0 @@
-type: Block
-research: launch-pad
-requirements: [
-  ph2/1
-]
