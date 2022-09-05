@@ -1,10 +1,9 @@
 const binaryItems = require('content/items');
 
 const defense = [ 
-	extend(Wall, "test", {
-		health: 9999999,
-		chanceDeflect: 1,
-		requirements: ItemStack.with(binaryItems.zero, 5))
+	extend(Wall, "the-what", {
+		health: 20000,
+		requirements: ItemStack.with(binaryItems.zero, 50, binaryItems.one, 50)
 	})
 ];
 
