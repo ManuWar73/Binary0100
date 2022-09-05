@@ -7,5 +7,5 @@ const test = extend(Wall, "test", BuildVisibility.shown, {
 	},
 	chanceDeflect: 1
 })
-
+exports.test = test
 test.requirements(Category.defense, ItemStack.with(binaryItems.zero))
