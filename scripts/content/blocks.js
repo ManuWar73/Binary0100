@@ -14,5 +14,5 @@ for(let i = 0;i<defense.length;i++){
 }
 
 module.exports = {
-	[`${defense[i].name}`]: [`${defense[i].name}`]
+	defense[0]: [`${defense[0].name}`]
 };
