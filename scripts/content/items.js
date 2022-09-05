@@ -11,6 +11,6 @@ const one = extend(Item, "one", Color.valueOf("000000"), {
 });
 
 module.exports = {
-	zero,
-	one
+	zero: zero,
+	one: one
 };
