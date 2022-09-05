@@ -1,11 +1,16 @@
-export const zero = extend(Item, "zero", Color.valueOf("000000"), {
+const zero = extend(Item, "zero", Color.valueOf("000000"), {
 	cost: 0.2,
 	hardness: 2,
-	alwaysUnlocked: true,
-})
+	alwaysUnlocked: true
+});
 
-export const one = extend(Item, "one", Color.valueOf("000000"), {
+const one = extend(Item, "one", Color.valueOf("000000"), {
 	cost: 0.2,
 	hardness: 2,
-	alwaysUnlocked: true,
-})
+	alwaysUnlocked: true
+});
+
+module.exports = {
+	zero,
+	one
+};
